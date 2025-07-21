@@ -1,0 +1,605 @@
+<!-- activity_main.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to XYZ Bank"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/balanceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance: $0.00"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/generateQRBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/sendMoneyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Money"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/receiveMoneyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive Money"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/transactionHistoryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/chatbotBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI Assistant"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+<!-- activity_login.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_bank_logo"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Bank"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digital Payment Solution"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="48dp" />
+
+    <EditText
+        android:id="@+id/mobileEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+<!-- activity_qr_code.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your QR Code"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/qrDataTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QR Data: "
+        android:textSize="14sp"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share this QR code with others to receive payments"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>
+
+<!-- activity_send_money.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Money"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipient (Mobile or Email ID)"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/recipientEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile number or email@OnePay.com"
+        android:padding="16dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/sendMoneyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Money"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+<!-- activity_receive_money.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive Money"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/receiveInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="32dp" />
+
+</LinearLayout>
+
+<!-- activity_transaction_history.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:padding="16dp" />
+
+    <ListView
+        android:id="@+id/transactionListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
+
+<!-- transaction_item.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SENT"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color" />
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$100.00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To: 1234567890"
+        android:textSize="14sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/timestampTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2024-01-01 12:00:00"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_secondary"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
+
+<!-- activity_chatbot.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Assistant"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:padding="16dp" />
+
+    <ListView
+        android:id="@+id/chatListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type your message..."
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- chat_user_message.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/user_message_background"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+<!-- chat_bot_message.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:padding="12dp"
+        android:textColor="@color/text_color"
+        android:background="@drawable/bot_message_background"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+<!-- colors.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#1976D2</color>
+    <color name="primary_dark_color">#1565C0</color>
+    <color name="accent_color">#FF4081</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="text_color">#333333</color>
+    <color name="text_color_secondary">#666666</color>
+    <color name="divider_color">#E0E0E0</color>
+</resources>
+
+<!-- strings.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XYZ Bank</string>
+    <string name="welcome_message">Welcome to XYZ Bank Digital Payment</string>
+    <string name="login_hint">Enter your mobile number</string>
+    <string name="send_money">Send Money</string>
+    <string name="receive_money">Receive Money</string>
+    <string name="generate_qr">Generate QR Code</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="ai_assistant">AI Assistant</string>
+    <string name="balance">Balance</string>
+    <string name="amount">Amount</string>
+    <string name="recipient">Recipient</string>
+</resources>
+
+<!-- button_background.xml (drawable) -->
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_dark_color" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_color" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>
+
+<!-- edittext_background.xml (drawable) -->
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/divider_color" />
+    <corners android:radius="8dp" />
+</shape>
+
+<!-- user_message_background.xml (drawable) -->
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/primary_color" />
+    <corners android:radius="16dp" />
+</shape>
+
+<!-- bot_message_background.xml (drawable) -->
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/divider_color" />
+    <corners android:radius="16dp" />
+</shape>
+
+<!-- AndroidManifest.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.OnePay.paymentapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".QRCodeActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".SendMoneyActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".ReceiveMoneyActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".TransactionHistoryActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".ChatbotActivity"
+            android:exported="false" />
+            
+    </application>
+</manifest>
+
+<!-- build.gradle (Module: app) -->
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.OnePay.paymentapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.OnePay.paymentapp"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
